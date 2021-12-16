@@ -3,10 +3,15 @@
 # For example, 13 is a divisor of 26 because 26 / 13 has no remainder.)
 
 def determine_if_divisor(num):
+    #using list comprehension
     divisor = [x for x in range (1, num+1) if num % x == 0]
-    '''for x in range (1, num):
-        if num % x == 0:
-            divisor.append(x)'''
+    
+    #below is another way to accomplish the same result
+    
+    #for x in range (1, num):
+        #if num % x == 0:
+            #divisor.append(x)
+            
     return divisor
 
 def main():
