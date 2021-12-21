@@ -18,9 +18,10 @@ def determine_common_items(lista, listb):
             c.append(num)
     return c
 
+
 def create_list():
     rand_list = []
-    list_size = random.randint(10, 20)
+    list_size = random.randint(5, 6)
     for num in range (list_size + 1):
         rand_list.append(random.randint(1,100))
     return rand_list
@@ -28,12 +29,12 @@ def create_list():
 def main():
     a = create_list()
     b = create_list()
+    result = determine_common_items(a, b)
     print(f"List A: {a}")
     print(f"List B: {b}")
-    result = determine_common_items(a, b)
     print()
     if result:
-        print(f"Common numbers between List A and List B is: {result}")
+        print(f"Common numbers between List A and List B are: {result}")
         print(result)
     else:
         print("There are no common numbers between the lists.")
