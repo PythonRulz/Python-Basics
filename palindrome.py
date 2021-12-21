@@ -25,3 +25,7 @@ def main():
     
 
 main()
+
+# simplify by eliminating the need for lists
+# example:
+#       the_string[::-1]
