@@ -12,7 +12,7 @@ def is_palindrome(string):
     for letter in string:
         string_list.append(letter)
     reverse_list = string_list[::-1]
-    return string_list == reverse_list
+    return string_list == reverse_list #return a True/False boolean to the result variable
         
 
 def main():
