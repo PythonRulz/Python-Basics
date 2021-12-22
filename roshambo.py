@@ -23,6 +23,17 @@ def get_user_choice(rps):
 
 # i'm not a fan of all these conditional statements to determine the winner
 # any suggestions would be appreciated
+# while i did consider the use of AND/OR conditional statements, I couldn't figure it out
+# after looking at some other solutions, I did find it.  While it's still noisy, it is a bit simplified
+
+'''
+    if (user == 'Rock' and computer == 'Paper') or (user == 'Scissors' and computer == 'Rock') or (user == 'Paper' and computer == 'Scissors'):
+        print(f"{computer} beats {user} Computer Wins!")
+    elif (computer == 'Rock' and user == 'Paper') or (computer == 'Scissors' and user == 'Rock') or (computer == 'Paper' and user == 'Scissors'):
+        print(f"{user} beats {computer} User Wins!") 
+    else:
+        print("It's a tie")
+'''
 def who_wins(user, computer):
     if user == 'Rock' and computer == 'Paper':
         print("Paper beats Rock, Computer Wins!")
